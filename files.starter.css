@@ -37,7 +37,7 @@ button:active {
   /* add your CSS below */
   justify-content: center;
   direction: column;
-  width: 10% ;
+  width: 10%;
   height: 100%;
   flex-flow: column;
   /* padding: 5%; */
