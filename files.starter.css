@@ -1,0 +1,149 @@
+* {
+  /* basic CSS reset, don't touch :) */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  /* add your CSS below */
+  display: flex;
+}
+
+/* Calculator Buttons */
+button {
+  width: 80px;
+  /* add your CSS below */
+}
+
+button[value="="] {
+  background-color: rgb(214, 214, 216);
+}
+
+button:hover {
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.12); 
+}
+button:active {
+  background-color: gold;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  color: black;
+}
+
+/* Calculator Layout */
+.container {
+  display: flex;
+  /* add your CSS below */
+  justify-content: center;
+  direction: column;
+  width: 10% ;
+  height: 100%;
+  flex-flow: column;
+  /* padding: 5%; */
+  background-color: purple;
+}
+
+.display {
+  display: flex;
+  /* add your CSS below */
+  background-color: black;
+  direction: row;
+  /* flex-flow: row; */
+  width: 100%;
+  height:90px;
+  /* height: 30%; */
+  /* border-radius: 5%; */
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+#display-result {
+  /* add your CSS below */
+  color: white;
+  
+}
+
+.keypads {
+  display: flex;
+  /* add your CSS below */
+  background-color: blue;
+  width: 100%;
+  /* height: 100px; */
+  height: 60%;
+  flex-direction: row;
+  flex-flow: row;
+}
+.left-middle button, .left-bottom button {
+  border-radius: 50%;
+}
+
+.left {
+  /* Only un-comment the below to help visualize structure, 
+    no additional CSS needed */
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  /* flex-flow: columnn; */
+  /* flex-wrap: wrap; */
+  width: 80%;
+  /* background-color: green; */
+}
+
+.left-top {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  /* flex-wrap: wrap; */
+  width: 60%;
+  /* background-color: green; */
+
+
+}
+
+.left-middle {
+  /* Only un-comment the below to help visualize structure,
+     no additional CSS needed */
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* width: */
+  /* flex-wrap: wrap; */
+  /* overflow: ; */
+  /* flex-direction: column-reverse; */
+  /* flex-flow: row; */
+  /* background-color: red; */
+}
+
+.left-middle section {
+  display: flex;
+  flex-direction: row;
+  /* flex-flow: row; */
+}
+
+.left-bottom {
+  display: flex;
+  flex-direction: row;
+  /* flex-flow: row; */
+}
+
+.right {
+  display: flex;
+  /* add your CSS below */
+  direction:column;
+  flex-flow: column;
+  /* background-color: pink; */
+  width: 20%;
+}
+
+.right > button {
+  background-color: rgb(195, 211, 133);
+  border-radius: 50%;
+  width: 100%;
+}
+
+#clear {
+  width: 160px;
+  background-color: rgb(214, 214, 216);
+}
