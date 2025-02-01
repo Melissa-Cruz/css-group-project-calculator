@@ -100,8 +100,9 @@ button:active {
   /* add your CSS below */
   color: white;
   position: absolute;
-  bottom: 8px;
-  left:88%;
+  bottom: 8%;
+  left:85%;
+  font-size: 3em;
   /* top:-50px; */
   /* right: 89%; */
 
